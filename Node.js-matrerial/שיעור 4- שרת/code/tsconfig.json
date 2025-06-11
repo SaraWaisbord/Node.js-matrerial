@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",              // מהירות קוד טובה יותר ב-ES2020
+    "module": "CommonJS",            // השתמש במודול ESM "module": "ESNext" ו־"moduleResolution": "node"
+    "moduleResolution": "node",      // תאימות ל-Node.js
+    "esModuleInterop": true,         // תאימות עם מודולים מודרניים
+    "allowJs": true,                 // מאפשר עבודה גם עם JS (עוזר ב-Node)
+    "outDir": "./dist",              // מיקום הקבצים המומלצים
+    "rootDir": "./code",              // מיקום קבצי TypeScript המקוריים
+    "strict": true,                  // אם רוצים מצב ניהול טייפים חזק
+    "skipLibCheck": true             // נדרש אם יש בעיות עם סוגי ספריות
+  },
+  "include": ["src/**/*.ts"],         // הקבצים שברצונך לקמפל
+  "exclude": ["node_modules"]         // אל תכלול את תיקיית node_modules
+}
